@@ -4,9 +4,25 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>Text Editor | Home</title>
 </head>
 <body>
-  
+  <div>
+<textarea></textarea>
+<canvas></canvas>
+<button></button>
+<div class="output"> this is where the output would show .. needs script.. see below</div>
+
+
+  </div>
+  <script language="javascript">
+    var realConsoleLog = console.log;
+    console.log = function () {
+        var message = [].join.call(arguments, " ");
+        $(".output").text(message);
+        realConsoleLog.apply(console, arguments);
+    };
+    console.log("hello", "my", "name", "is", "Taylor");
+</script>
 </body>
 </html>
