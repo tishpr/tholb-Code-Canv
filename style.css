@@ -1,17 +1,37 @@
 /* Styles for page */
-.wrapper {
+/* .wrapper {
   position: relative;
-  width: 80%;
+  left: 20%;
+  width: 90%;
   height: 80vh;
   margin: 0 auto;
-  padding: 5rem;
-  background-color: lightskyblue;
-}
+  padding: 2rem;
+  
+}*/
 .textBox {
-  position: absolute;
+  position: relative;
   top: 10%;
-  left: 0;
+  left: 5%;
+  display: inline-block;
   width: 45%;
   height: 40vh;
+  background-color: rgb(5, 75, 119);
 }
-  
+.canvas {
+  position: relative;
+  top: 10%;
+  left: 6%;
+  display: inline-block;
+  width: 45%;
+  height: 40vh;
+  background-color: lightseagreen;
+}
+
+.button {
+background-color: rgb(219, 14, 14);
+padding: 1rem;
+position: relative;
+top: 5rem;
+right: 50%;
+transform: translateX(55%);
+}
