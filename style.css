@@ -2,7 +2,16 @@
 .wrapper {
   position: relative;
   width: 80%;
-  height: 20vh;
+  height: 80vh;
   margin: 0 auto;
+  padding: 5rem;
   background-color: lightskyblue;
 }
+.textBox {
+  position: absolute;
+  top: 10%;
+  left: 0;
+  width: 45%;
+  height: 40vh;
+}
+  
