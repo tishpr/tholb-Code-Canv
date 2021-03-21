@@ -1,28 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Text Editor | Home</title>
-</head>
-<body>
-  <div>
-<textarea></textarea>
-<canvas></canvas>
-<button>Update</button>
-<div class="output"> this is where the output would show .. needs script.. see below</div>
+
+  <head>
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text Editor | Home</title>
+  </head>
+
+  <body>
+    <div>
+      <textarea></textarea>
+      <canvas></canvas>
+      <button>Update</button>
+      <div class="output"> this is where the output would show .. needs script.. see below</div>
 
 
-  </div>
-  <script language="javascript">
-    var realConsoleLog = console.log;
-    console.log = function () {
+    </div>
+    <script language="javascript">
+      var realConsoleLog = console.log;
+      console.log = function () {
         var message = [].join.call(arguments, " ");
         $(".output").text(message);
         realConsoleLog.apply(console, arguments);
-    };
-    console.log("hello", "my", "name", "is", "Taylor");
-</script>
-</body>
+      };
+      console.log("hello", "my", "name", "is", "Taylor");
+    </script>
+  </body>
+
 </html>
