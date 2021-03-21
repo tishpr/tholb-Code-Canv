@@ -1,1 +1,8 @@
 /* Styles for page */
+.wrapper {
+  position: relative;
+  width: 80%;
+  height: 20vh;
+  margin: 0 auto;
+  background-color: lightskyblue;
+}

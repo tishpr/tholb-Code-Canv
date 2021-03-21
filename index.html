@@ -13,15 +13,15 @@
   </head>
 
   <body>
-    <div>
+    <div class="wrapper">
+
       <textarea></textarea>
       <canvas></canvas>
       <button>Update</button>
       <div class="output"> this is where the output would show .. needs script.. see below</div>
 
-
     </div>
-    <script language="javascript">
+    <!-- <script language="javascript">
       var realConsoleLog = console.log;
       console.log = function () {
         var message = [].join.call(arguments, " ");
@@ -29,7 +29,7 @@
         realConsoleLog.apply(console, arguments);
       };
       console.log("hello", "my", "name", "is", "Taylor");
-    </script>
+    </script> -->
   </body>
 
 </html>
