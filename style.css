@@ -3,50 +3,58 @@
   padding: 0;
   box-sizing: border-box;
 }
+
 body {
-  font-family: "Lato", sans-serif; 
+  font-family: "Lato", sans-serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 1.7;
- 
   color: #777;
 }
 
-Styles for page */
-.wrapper {
-  height: 80vh;
-   margin: 0 auto;
-  padding: 2rem; 
-}
-.textBox {
+ .container {
+  height: 100vh;
+  margin: 0 auto;
+  padding: 2rem;
   position: relative;
+}
+
+.textBox {
+  position: absolute;
   top: 10%;
   left: 5%;
   display: inline-block;
   width: 45%;
   height: 40vh;
-  background-color: rgb(5, 75, 119); 
-  
+  background-color: rgb(5, 75, 119);
+
 }
 
 .canvas {
-   position: relative;
+  position: absolute;
   top: 10%;
- left: 6%; 
+  left: 50%;
   display: inline-block;
-  width: 45%; 
+  width: 45%;
   height: 40vh;
   background-color: lightseagreen;
-  position: absolute;
-  top: 0%;
-  left: 50%;
+  
+
 }
 
 .button {
-background-color: rgb(219, 14, 14);
-padding: 1.5rem 3rem;
-position: absolute;
-top: 45%;
-right: 50%;
-transform: translateX(55%);
+  background-color: rgb(219, 14, 14);
+  padding: 1.5rem 3rem;
+  position: absolute;
+  top: 55%;
+  right: 50%;
+  transform: translateX(55%);
+}
+.output {
+  position: absolute;
+  bottom: 5%;
+  left: 50%;
+  background-color: rgb(209, 150, 224);
+  padding: 1.5rem 2rem;
+  transform: translateX(-50%);
 }
