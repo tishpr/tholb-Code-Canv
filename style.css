@@ -48,6 +48,9 @@ body {
   font-size: 40px;
   font-weight: 400;
   letter-spacing: 8px;
+  animation-name: moveUp;
+  animation-duration: 3s;
+  animation-timing-function: ease-in-out;
 }
 @keyframes moveInLeft {
   0% {
@@ -68,6 +71,17 @@ transform: translateX(0);
   opacity: 1;
   transform: translateX(0);
     }
+}
+
+@keyframes moveUp {
+  0% {
+    opacity: 0;
+    transform: translateY(200px);
+  }
+  100% {
+opacity: 1;
+transform: translateY(0);
+  }
 }
 
 .container {
