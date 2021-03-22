@@ -93,15 +93,14 @@ transform: translateY(0);
   position: relative;
 }
 
-.textBox {
+.editor {
   position: absolute;
+  font-size: 24px;
   top: 10%;
   left: 5%;
   display: inline-block;
   width: 45%;
   height: 40vh;
-  background-color: rgb(5, 75, 119);
-
 }
 
 .canvas {
@@ -112,8 +111,6 @@ transform: translateY(0);
   width: 45%;
   height: 40vh;
   background-color: lightseagreen;
-
-
 }
 
 .button {

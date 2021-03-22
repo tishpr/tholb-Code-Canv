@@ -23,28 +23,26 @@
         <span class="header-sub">Learn by</span> 
         <span class="header-special">doing</span>
       </h1>
-      <p>Text area on the left, canvas on the right and the console below.</p>
+      <p>Write parsing expression grammers on the left, visualize the result on the right.</p>
 
     </header>
     <div class="container">
 
-      <textarea class="textBox"></textarea>
+      <div class="editor" id="editor"></div>
       <canvas class="canvas"></canvas>
       <button class="button">Update</button>
-      <div class="output"> this is where the output would show .. <br>
-        uses a script, perhaps like this one.
-      </div>
 
     </div>
-    <!-- <script language="javascript">
-      var realConsoleLog = console.log;
-      console.log = function () {
-        var message = [].join.call(arguments, " ");
-        $(".output").text(message);
-        realConsoleLog.apply(console, arguments);
-      };
-      console.log("hello", "my", "name", "is", "Taylor");
-    </script> -->
+
+    <script src="ace-builds/src-noconflict/ace.js" type="text/javascript" charset="utf-8"></script>
+
+    <script>
+      var editor = ace.edit("editor");
+      editor.setTheme("ace/theme/textmate");
+      editor.session.setMode("ace/mode/text");
+      editor.session.setValue("Expr <- Integer '+' Integer\n\n" +
+                              "Integer <- [0-9]+");
+    </script>
   </body>
 
 </html>
