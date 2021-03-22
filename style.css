@@ -11,8 +11,11 @@ body {
   line-height: 1.7;
   color: #777;
 }
-
- .container {
+.header {
+  text-align: center;
+  padding-top: 1rem;
+}
+.container {
   height: 100vh;
   margin: 0 auto;
   padding: 2rem;
@@ -38,7 +41,7 @@ body {
   width: 45%;
   height: 40vh;
   background-color: lightseagreen;
-  
+
 
 }
 
@@ -50,6 +53,7 @@ body {
   right: 50%;
   transform: translateX(55%);
 }
+
 .output {
   position: absolute;
   bottom: 5%;
