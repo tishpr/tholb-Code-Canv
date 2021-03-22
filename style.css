@@ -11,12 +11,15 @@ body {
   line-height: 1.7;
   color: #777;
 }
+
+
 .header {
   text-align: center;
   padding-top: 1rem;
   font-weight: 400;
-  
+
 }
+
 .header-main {
   display: block;
   font-size: 60px;
@@ -26,6 +29,7 @@ body {
   animation-duration: 2s;
   animation-timing-function: ease-in-out;
 }
+
 .header-secondary {
   display: block;
   font-size: 60px;
@@ -35,13 +39,15 @@ body {
   animation-duration: 2s;
   animation-timing-function: ease-in-out;
 }
+
 .header-sub {
   display: block;
   font-size: 40px;
   font-weight: 300;
   letter-spacing: 12px;
-  
+
 }
+
 .header-special {
   display: block;
   text-transform: uppercase;
@@ -53,36 +59,41 @@ body {
   animation-duration: 3s;
   animation-timing-function: ease-in-out;
 }
+
 @keyframes moveInLeft {
   0% {
     opacity: 0;
     transform: translateX(-100px);
   }
+
   100% {
-opacity: 1;
-transform: translateX(0);
+    opacity: 1;
+    transform: translateX(0);
   }
 }
+
 @keyframes moveInRight {
-    0% {
-      opacity: 0;
-      transform: translateX(100px);
-    }
-    100% {
-  opacity: 1;
-  transform: translateX(0);
-    }
+  0% {
+    opacity: 0;
+    transform: translateX(100px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
 }
 
 @keyframes moveUp {
   0% {
     opacity: 0;
     transform: translateY(200px);
-    
+
   }
+
   100% {
-opacity: 1;
-transform: translateY(0);
+    opacity: 1;
+    transform: translateY(0);
   }
 }
 
@@ -91,6 +102,7 @@ transform: translateY(0);
   margin: 0 auto;
   padding: 2rem;
   position: relative;
+  text-align: center;
 }
 
 .textBox {
@@ -112,17 +124,34 @@ transform: translateY(0);
   width: 45%;
   height: 40vh;
   background-color: lightseagreen;
-
-
 }
 
-.button {
-  background-color: rgb(219, 14, 14);
-  padding: 1.5rem 3rem;
+.btn:link,
+.btn:visited {
+  text-transform: uppercase;
+  text-decoration: none;
+  display: inline-block;
+
+  background-color: rgb(159, 215, 53);
+  color: rgb(2, 37, 59);
+  padding: 1.5rem 4rem; 
+  letter-spacing: 7px;
+  border-radius: 100px;
   position: absolute;
   top: 55%;
-  right: 50%;
-  transform: translateX(55%);
+  right: 40%;
+  transition: all .2s;
+}
+
+.btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px rgba(0,0,0,.3);
+}
+.btn:active {
+  transform: translateY(-1px);
+}
+.btn:hover::after {
+  transform: scale(1.5);
 }
 
 .output {
